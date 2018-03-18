@@ -1,5 +1,6 @@
 package com.app.step_definitions;
 
+import com.app.hooks.Hooks;
 import com.app.pages.CRMDashboardPage;
 import com.app.pages.SuiteCRMLoginPage;
 
@@ -16,6 +17,11 @@ public class DasboardActions {
 
 	@Then("^Post should be diplayed$")
 	public void post_should_be_diplayed() {
+	}
+	
+	@Then("^I log out$")
+	public void i_log_out() {
+		dashboradPage.logout();
 	}
 
 }
